@@ -1,5 +1,7 @@
 <h1>{{title}}</h1>
 <h2>Events</h2>
-
+<div ng-repeat="event in events">
+  <span class="name">{{event.name}}</span>
+</div>
 <h2>New</h2>
 <a href="#/new-event" type="button" class="btn btn-default btn-info">+Event</button>

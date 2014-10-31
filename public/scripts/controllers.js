@@ -12,6 +12,15 @@ angular.module('app.controllers', [])
   ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $scope.title='Home'
+    $scope.events = [
+      {
+        'name': 'Mixed Drinks at Roosters 6pm tomorrow'
+      }, {
+        'name': 'Wine Flights at Vino X 8pm Tuesday'
+      }, {
+        'name': 'Craft Beer Tasting at Mad Tree Brewers 6pm Friday'
+      }
+    ]
   }])
   .controller('newController',
   ['$scope', '$routeParams', '$http',
